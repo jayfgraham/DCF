@@ -106,7 +106,7 @@ if __name__ == '__main__':
     parser.add_argument('--eg', '--earnings_growth_rate', help = 'growth in revenue, YoY',  type = float, default = .05)
     parser.add_argument('--cg', '--cap_ex_growth_rate', help = 'growth in cap_ex, YoY', type = float, default = 0.045)
     parser.add_argument('--pg', '--perpetual_growth_rate', help = 'for perpetuity growth terminal value', type = float, default = 0.05)
-    parser.add_argument('--apikey', help='API key for financialmodelingprep.com', default=os.environ.get('APIKEY'))
+    parser.add_argument('--apikey', help='API key for financialmodelingprep.com', default= 'b3824e0d8e2e5f1ae8bffdf86ff9e300')
 
     args = parser.parse_args()
     main(args)
